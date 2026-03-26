@@ -1,12 +1,19 @@
-import java.util.Scanner;
+import java.io.*;
+import java.util.StringTokenizer;
 
 public class Main {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String args[]) throws IOException {
         
-        while(sc.hasNext()) {
-            int a = sc.nextInt();
-            int b = sc.nextInt();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        String input = "";
+        
+        while((input = br.readLine()) != null) {
+            StringTokenizer st = new StringTokenizer(input);
+            
+            int a = Integer.parseInt(st.nextToken());
+            int b = Integer.parseInt(st.nextToken());
             
             System.out.printf("%d\n", a+b);
         }
