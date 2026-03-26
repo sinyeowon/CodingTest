@@ -1,5 +1,10 @@
 import sys
 
-for line in sys.stdin:
-    a, b = map(int, line.split())
-    print(a+b)
+while True:
+    line = sys.stdin.readline()
+    
+    if not line:
+        break
+    else:
+        a, b = map(int, line.split())
+        print(a+b)
