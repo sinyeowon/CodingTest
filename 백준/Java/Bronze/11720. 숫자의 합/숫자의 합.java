@@ -9,7 +9,7 @@ public class Main {
         
         int total = 0;
         for(int i=0; i<n; i++) {
-            total += (int)(s.charAt(i) - '0');
+            total += Integer.parseInt(String.valueOf(s.charAt(i)));
         }
         
         System.out.print(total);
