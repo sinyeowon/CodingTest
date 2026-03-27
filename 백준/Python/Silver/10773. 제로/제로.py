@@ -1,0 +1,16 @@
+n = int(input())
+
+arr = []
+for _ in range(n):
+    
+    num = int(input())
+    if num == 0:
+        arr.pop()
+    else:
+        arr.append(num)
+        
+total = 0
+for i in range(len(arr)):
+    total += arr[i]
+
+print(total)
